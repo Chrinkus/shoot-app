@@ -1,0 +1,27 @@
+{
+  "name": "shoot-app",
+  "version": "0.1.0",
+  "description": "An iPad app for tracking scores",
+  "main": "./build/index.html",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chrinkus/shoot-app.git"
+  },
+  "author": "Chris Schick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chrinkus/shoot-app/issues"
+  },
+  "homepage": "https://github.com/Chrinkus/shoot-app#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}

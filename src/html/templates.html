@@ -1,0 +1,78 @@
+<!-- SECTION IDS MUST SYNC WITH STATE.HTML.VIEWS -->
+<section id='mainMenu'>
+  <ul>
+    <li>
+      <p class='mmOption'>New Event</p>
+      <form id='mmCreate' class='hide'>
+
+        <p>
+          <label for='mmStartDate'>Start Date:</label>
+          <input type='date' id='mmStartDate' placeholder='YYYY-MM-DD' name='date'>
+        </p>
+
+        <p>
+          <label for='mmStartType'>Event Type:</label>
+          <select id='mmStartType' name='type'>
+            <option value='springShoot'>Spring Shoot</option>
+            <option value='provincials'>Provincials</option>
+            <option value='nationals'>Nationals</option>
+            <option value='exhibition'>Exhibition</option>
+          </select>
+        </p>
+
+        <p>
+          <label for='mmStartScorer'>Scorer:</label>
+          <input type='text' id='mmStartScorer' name='scorer'>
+        </p>
+
+        <p>
+          <button type='submit'>Create New Event</button>
+        </p>
+
+      </form>
+    </li>
+
+    <li>
+      <p class='mmOption'>Load Event</p>
+      <form id='mmLoad' class='hide'>
+        <p>Which event would you like to load?</p>
+        <p>
+          <label for='mmLoadEvent'>Choose:</label>
+          <select id='mmLoadEvent' name='load' multiple>
+            <!-- options are injected by applyEventList() in app.js -->
+          </select>
+        </p>
+        <p>
+          <button type='submit'>Load Event</button>
+        </p>
+      </form>
+    </li>
+
+    <li>
+      <p class='mmOption'>Remove Event</p>
+      <form id='mmRemove' class='hide'>
+        <p>Which event would you like to remove?</p>
+        <p>
+          <label for='mmRemoveEvent'>Choose:</label>
+          <select id='mmRemoveEvent' name='remove' multiple>
+            <!-- options are injected by applyEventList() in app.js -->
+          </select>
+        </p>
+        <p>
+          <button type='submit'>Delete Event</button>
+        </p>
+      </form>
+    </li>
+
+  </ul>
+</section>
+
+<section id='roster'>
+  <h1>Roster Page</h1>
+  <p>How would you like to manage your people?</p>
+</section>
+
+<section id='scoring'>
+  <h1>Enter Scores</h1>
+  <p>Got some scores? Enter them here</p>
+</section>
